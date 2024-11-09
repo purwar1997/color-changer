@@ -1,32 +1,14 @@
-const btn = document.querySelector("#btn");
+const button = document.getElementsByTagName('button')[0];
 
-function random() {
-  const num = Math.floor(Math.random() * 16);
-  switch (num) {
-    case 10:
-      return "a";
-    case 11:
-      return "b";
-    case 12:
-      return "c";
-    case 13:
-      return "d";
-    case 14:
-      return "e";
-    case 15:
-      return "f";
-    default:
-      return num;
+const getRandomValue = () => Math.floor(Math.random() * 256);
+const changeBGColor = () => `rgb(${getRandomValue()}, ${getRandomValue()}, ${getRandomValue()})`;
+
+button.addEventListener('click', () => {
+  document.body.style.backgroundColor = changeBGColor();
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Enter') {
+    document.body.style.backgroundColor = changeBGColor();
   }
-}
-
-function changeBGColor() {
-  let bgColor = "#";
-  for (let i = 0; i < 6; i++) {
-    bgColor = bgColor + random();
-  }
-
-  document.body.style.backgroundColor = bgColor;
-}
-
-btn.addEventListener("click", changeBGColor);
+});
