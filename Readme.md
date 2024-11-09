@@ -2,15 +2,21 @@
 
 ![HTML](https://img.shields.io/badge/-HTML-red)
 ![CSS](https://img.shields.io/badge/-CSS-orange)
-![Javascript](https://img.shields.io/badge/-Javascript-green)
-![DOM](https://img.shields.io/badge/-DOM-blueviolet)
+![Javascript](https://img.shields.io/badge/-Javascript-blue)
+![DOM](https://img.shields.io/badge/-DOM-yellowgreen)
 
 ## Description
 
-A simple DOM project which changes background color of web page whenever a button is clicked. This project is created using HTML, CSS and Javascript.
+A JavaScript DOM project in which background color a of web page changes whenever a button is clicked or an Enter key is pressed. This project is created using HTML, CSS, and Javascript.
 
-### Preview of the project :-
+## Learnings from this project -
+
+- How `getElementsByTagName` API can be used to access HTML elements
+- How to generate random values within a specfic range using `Math.random()`
+- What are `event listeners` and how they can be attached to HTML elements
+
+### Preview of the project
 
 ![Preview](./preview.png)
 
-### [Live link](https://color-changer-feex.vercel.app/) of the project
+### [Live link](https://color-changer-xi-five.vercel.app/) of the project.
